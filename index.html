@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="CodeWithSthee">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/sthee.jpeg" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="form-header">
+        <div class="btn-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="Login()">Login</button>
+            <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+        </div>
+        <form action="home.html" id="login" class="input-group">
+
+            <input type="text" class="input-field" placeholder="Username" title="Enter Your Username" required>
+            <input type="password" class="input-field" placeholder="Password" maxlength="10" title="Enter Your Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <a href="#" class="forgot-pass">Forgot Password</a>
+            <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form id="register" class="input-group">
+            <label for="username"></label>
+            <input type="text" id="username" name="username" class="input-field" placeholder="Username" required>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" class="input-field" placeholder="Email" required>
+            <label for="pass"></label>
+            <input type="password" id="pass" class="input-field" placeholder="Password" required>
+            <label for="checkbox"></label>
+            <input type="checkbox" id="checkbox" class="check-box"><span>I agree to terms & conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
